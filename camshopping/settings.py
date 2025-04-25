@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-stlq+th%s$yod1#9j@v-&yeyyw9jbuc@$pfrfqvrjp30*r&6)3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['camshopping.onrender.com']
 
 
 # Application definition
