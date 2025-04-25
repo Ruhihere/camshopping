@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+  <a class="navbar-brand" href="/logo">DigiCam</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a class="nav-link" href="/customerlogin">Sign In</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/customersignup">Sign Up</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/admin">Admin</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          More
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/send-feedback">Feedback</a>
+          <a class="dropdown-item" href="/contactus">Contact us</a>
+      <li class="nav-item">
+        <a class="nav-link" href="/cart"><i class="fa fa-shopping-cart"></i> {{ product_count_in_cart }} Cart Items </a>
+      </li>
+
+        </div>
+      </li>
+
+    </ul>
+    <form class="form-inline my-2 my-lg-0" action="/search/" method="get">
+      <input class="form-control mr-sm-2" type="search" name="query" placeholder="Search By Brand or Product" aria-label="Search">
+      <button class="btn btn-success my-2 my-sm-0" type="submit">Search <i class='fa fa-search'></i></button>
+    </form>
+  </div>
+</nav>
