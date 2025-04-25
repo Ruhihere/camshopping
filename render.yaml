@@ -3,7 +3,7 @@ services:
     name: camshopping
     env: python
     plan: free
-    buildCommand: "pip install -r requirements.txt"
+    buildCommand: "pip install -r requirements.txt && python manage.py collectstatic --no-input && python manage.py migrate"
     startCommand: "gunicorn camshopping.wsgi:application"
     envVars:
       - key: DJANGO_SETTINGS_MODULE
@@ -11,6 +11,6 @@ services:
       - key: PYTHON_VERSION
         value: 3.11
       - key: SECRET_KEY
-        value: your-django-secret-key
+        value: your-actual-secret-key-here
       - key: DEBUG
         value: False
